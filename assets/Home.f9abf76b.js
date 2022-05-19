@@ -1,1 +1,0 @@
-import{_ as e,d as o,c as t,o as n}from"./index.6eb0419e.js";const r=o({setup(){return{}}});function c(s,a,p,u,_,d){return n(),t("div",null," welcome to \u9996\u9875 ")}var l=e(r,[["render",c]]);export{l as default};
