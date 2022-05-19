@@ -1,0 +1,6 @@
+import{d as i,f as d,r as v,c as p,e as C,u as l,o as E}from"./index.6eb0419e.js";const F=i({setup(m){let u=d([{title:"\u6253\u6E38\u620F",start:"2022-05-13 10:00:00",end:"2022-05-13 12:00:00",editable:!0},{title:"\u5B66\u4E60",start:"2022-05-14 14:00:00",end:"2022-05-14 16:00:00",editable:!0}]),s=e=>{console.log(e,"dateClick"),u.value.push({start:e.dateStr+" 16:40",end:e.dateStr+" 20:40",title:"\u65B0\u6DFB\u52A0\u7B2C\u4E00\u4EF6\u4E8B"})},a=(e,n)=>{console.log(e,"EventClickArg")},r=e=>{let n=document.createElement("div");console.log(e,"eventContent");let t=e.timeText.split(" - ");console.log(t);let o=t[0].replace("\u4E0A\u5348","").replace("\u4E0B\u5348","").replace("\u65F6",""),c=t[1].replace("\u4E0A\u5348","").replace("\u4E0B\u5348","").replace("\u65F6","");return console.log(o,c),n.innerHTML=`
+   <img src="src/assets/logo.png" style="width:20px;height:20px;">
+  <div>\u5F00\u59CB\u65F6\u95F4: ${o}</div>
+  <div>\u7ED3\u675F\u65F6\u95F4: ${c}</div>
+  <div>\u6807\u9898:${e.event._def.title}</div>
+  `,{domNodes:[n]}};return(e,n)=>{const t=v("i-calendar");return E(),p("div",null,[C(t,{events:l(u),onDateClick:l(s),onEventsClick:l(a),eventContent:l(r)},null,8,["events","onDateClick","onEventsClick","eventContent"])])}}});export{F as default};
